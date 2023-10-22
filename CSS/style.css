@@ -1,0 +1,118 @@
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+/*Navigation bar : logo and Images*/
+
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img {
+    border: 2px;
+    border-radius: 50%;
+    margin: 2px 3px;
+}
+
+/*Navigation bar : list styling*/
+
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none ;
+    font-size: 1.7rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    color: aliceblue;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+#home::before{
+    content: "";
+    background:url("../images/pxfuel\ \(1\).jpg") center/cover;
+    position: absolute;
+    height: 350%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#home h1{
+    color: hwb(63 24% 6%);
+    text-align: center;
+    font-size: 3rem;
+}
+#home p{
+    color: hwb(63 24% 6%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 10px 20px;
+    border: 2px solid wheat;
+    background-color: brown;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+
+}
